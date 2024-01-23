@@ -25,6 +25,9 @@ window.addEventListener('DOMContentLoaded', async () => {
 		}
 	});
 	nextButton.addEventListener('click', () => {
+		if (currentPage === 8) {
+			currentPage = 0;
+		}
 		currentPage++;
 		updatePage(currentPage);
 	});
